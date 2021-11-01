@@ -1,2 +1,12 @@
 # cautious-fortnight-docs
-vhghgh
+- VPC
+  - cidr ranges IPV4 can be expanded upto 5 address ranges
+  - VPC can use IPV6 in dual-stack mode. your resources can communicate over IPv4, or IPv6, or both. IPv4 and IPv6 communication are independent of each other. 
+  - You cannot disable IPv4 support for your VPC and subnets; this is the default IP addressing system for Amazon VPC and Amazon EC2.  
+- avaliablity Zones:
+  - Groupings of fault domains
+- Subnets
+  -  a segmented piece of a range of IP addresses in VPC
+  -  To add a new subnet to your VPC, you must specify an IPv4 CIDR block for the subnet from the range of your VPC.
+  -  You can optionally specify an IPv6 CIDR block for your subnet if an IPv6 CIDR block is associated with your VPC. 
+  -  You can specify the Availability Zone in which you want the subnet to reside. You can have multiple subnets in the same Availability Zone. 
