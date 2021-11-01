@@ -11,7 +11,7 @@
   -  You can optionally specify an IPv6 CIDR block for your subnet if an IPv6 CIDR block is associated with your VPC. 
   -  You can specify the Availability Zone in which you want the subnet to reside. You can have multiple subnets in the same Availability Zone.
   -  Public subnet
-    - The instances in the public subnet can send outbound traffic directly to the internet
+     - The instances in the public subnet can send outbound traffic directly to the internet.
   - Private subnet
     - The instances in the private subnet can't send outbound traffic directly to the internet. Instead, the instances in the private subnet can access the internet by using a network address translation (NAT) gateway that resides in the public subnet.
     - The instances can connect to the internet using the NAT gateway, but the internet cannot establish connections to the instances in private subnet. 
