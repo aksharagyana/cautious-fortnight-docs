@@ -14,4 +14,8 @@
      - The instances in the public subnet can send outbound traffic directly to the internet.
   - Private subnet
     - The instances in the private subnet can't send outbound traffic directly to the internet. Instead, the instances in the private subnet can access the internet by using a network address translation (NAT) gateway that resides in the public subnet.
-    - The instances can connect to the internet using the NAT gateway, but the internet cannot establish connections to the instances in private subnet. 
+    - The instances can connect to the internet using the NAT gateway, but the internet cannot establish connections to the instances in private subnet.
+    - The instances in the private subnet with IPV6 CIDR blocks can use an egress-only internet gateway to connect to the internet over IPv6, but the internet cannot establish connections to the private instances over IPv6.
+  - Instances with private IPv4 addresses in all subnets (private and public) in a VPC can communicate with each other. 
+- Internet Gateway
+  - An internet gateway connects the VPC to the internet and to other AWS services.  
