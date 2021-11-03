@@ -6,19 +6,19 @@
 - avaliablity Zones:
   - Groupings of fault domains
 -  Route table
-  - A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed.
-  - **Main route table—** The route table that automatically comes with your VPC. It controls the routing for all subnets that are not explicitly associated with any other route table.
-  - **Custom route table—** A route table that you create for your VPC.
-  - **Destination—** The range of IP addresses where you want traffic to go (destination CIDR). For example, an external corporate network with the CIDR 172.16.0.0/12.
-  - **Target—** The gateway, network interface, or connection through which to send the destination traffic; for example, an internet gateway.
-  - **Route table association—** The association between a route table and a subnet, internet gateway, or virtual private gateway.
-  - **Subnet route table—** A route table that's associated with a subnet.
-  - **Local route—** A default route for communication within the VPC.
-  - **Propagation—** Route propagation allows a virtual private gateway to automatically propagate routes to the route tables. This means that you don't need to manually enter VPN routes to your route tables. For more information about VPN routing options, see Site-to-Site VPN routing options in the Site-to-Site VPN User Guide.
-  - **Gateway route table—** A route table that's associated with an internet gateway or virtual private gateway.
-  - **Edge association—** A route table that you use to route inbound VPC traffic to an appliance. You associate a route table with the internet gateway or virtual private gateway, and specify the network interface of your appliance as the target for VPC traffic.
-  - **Transit gateway route table—** A route table that's associated with a transit gateway. For more information, see Transit gateway route tables in Amazon VPC Transit Gateways.
-  - **Local gateway route table—** A route table that's associated with an Outposts local gateway. For more information, see Local gateways in the AWS Outposts User Guide.
+    -  A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed.
+    - **Main route table—** The route table that automatically comes with your VPC. It controls the routing for all subnets that are not explicitly associated with any other route table.
+    - **Custom route table—** A route table that you create for your VPC.
+    - **Destination—** The range of IP addresses where you want traffic to go (destination CIDR). For example, an external corporate network with the CIDR 172.16.0.0/12.
+    - **Target—** The gateway, network interface, or connection through which to send the destination traffic; for example, an internet gateway.
+    - **Route table association—** The association between a route table and a subnet, internet gateway, or virtual private gateway.
+    - **Subnet route table—** A route table that's associated with a subnet.
+    - **Local route—** A default route for communication within the VPC.
+    - **Propagation—** Route propagation allows a virtual private gateway to automatically propagate routes to the route tables. This means that you don't need to manually enter VPN routes to your route tables. For more information about VPN routing options, see Site-to-Site VPN routing options in the Site-to-Site VPN User Guide.
+    - **Gateway route table—** A route table that's associated with an internet gateway or virtual private gateway.
+    - **Edge association—** A route table that you use to route inbound VPC traffic to an appliance. You associate a route table with the internet gateway or virtual private gateway, and specify the network interface of your appliance as the target for VPC traffic.
+    - **Transit gateway route table—** A route table that's associated with a transit gateway. For more information, see Transit gateway route tables in Amazon VPC Transit Gateways.
+    - **Local gateway route table—** A route table that's associated with an Outposts local gateway. For more information, see Local gateways in the AWS Outposts User Guide.
 - Subnets
   -  a segmented piece of a range of IP addresses in VPC
   -  To add a new subnet to your VPC, you must specify an IPv4 CIDR block for the subnet from the range of your VPC.
