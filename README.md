@@ -18,4 +18,10 @@
     - The instances in the private subnet with IPV6 CIDR blocks can use an egress-only internet gateway to connect to the internet over IPv6, but the internet cannot establish connections to the private instances over IPv6.
   - Instances with private IPv4 addresses in all subnets (private and public) in a VPC can communicate with each other. 
 - Internet Gateway
-  - An internet gateway connects the VPC to the internet and to other AWS services.  
+  - An internet gateway connects the VPC to the internet and to other AWS services.
+- NAT Gateway
+  - a NAT gateway is used so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
+  - You create a public NAT gateway in a public subnet and must associate an elastic IP address with the NAT gateway at creation. You cannot associate an elastic IP address with a private NAT gateway.
+  - You route traffic from the NAT gateway to the internet gateway for the VPC.
+  - Alternatively, you can use a (public or private) NAT gateway to connect to other VPCs or your on-premises network. In this case, you route traffic from the NAT gateway through a transit gateway or a virtual private gateway.
+  - You can attach an internet gateway to a VPC with a private NAT gateway, *but if you route traffic from the private NAT gateway to the internet gateway, the internet gateway drops the traffic*. 
