@@ -52,9 +52,9 @@
 - Access the internet from a private subnet
   - You can use a public NAT gateway in public subnet to enable instances in a private subnet to send outbound traffic to the internet, but the internet cannot establish connections to the instances.
   - The following is the route table associated with the public subnet. The first entry is the default entry for local routing in the VPC; it enables the instances in the VPC to communicate with each other. The second entry sends all other subnet traffic to the internet gateway; this enables the NAT gateway to access the internet.
-Destination | Target
------------- | -------------
-10.0.0.0/16  | local
-0.0.0.0/0    | internet-gateway-id
+      Destination | Target
+      ------------ | -------------
+      10.0.0.0/16  | local
+      0.0.0.0/0    | internet-gateway-id
   - bnghjnjhm
   
