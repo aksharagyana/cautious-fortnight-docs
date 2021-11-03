@@ -24,4 +24,4 @@
   - You create a public NAT gateway in a public subnet and must associate an elastic IP address with the NAT gateway at creation. You cannot associate an elastic IP address with a private NAT gateway.
   - You route traffic from the NAT gateway to the internet gateway for the VPC.
   - Alternatively, you can use a (public or private) NAT gateway to connect to other VPCs or your on-premises network. In this case, you route traffic from the NAT gateway through a transit gateway or a virtual private gateway.
-  - You can attach an internet gateway to a VPC with a private NAT gateway, *but if you route traffic from the private NAT gateway to the internet gateway, the internet gateway drops the traffic*. 
+  - You can attach an internet gateway to a VPC with a private NAT gateway, **but if you route traffic from the private NAT gateway to the internet gateway, the internet gateway drops the traffic**. 
