@@ -61,3 +61,12 @@
       ------------ | -------------
       10.0.0.0/16  | local
       0.0.0.0/0    | nat-gateway-id
+
+- VPN Gateway
+  - To establish secure connections between your on-premises networks and the AWS global network
+- Transit Gateway
+  - AWS Transit Gateway connects VPCs,This simplifies your network and puts an end to complex peering relationships. 
+  - It can also extend to connect VPCs and on-premises networks through a central hub. 
+  - It acts as a cloud router – each new connection is only made once.
+  - AWS Transit Gateway inter-Region peering encrypts all traffic, with no single point of failure or bandwidth bottleneck.
+  - Data is automatically encrypted, and never travels over the public internet.
