@@ -70,3 +70,4 @@
   - It acts as a cloud router – each new connection is only made once.
   - AWS Transit Gateway inter-Region peering encrypts all traffic, with no single point of failure or bandwidth bottleneck.
   - Data is automatically encrypted, and never travels over the public internet.
+    ![plot](img/tgw-after.d85d3e2cb67fd2ed1a3be645d443e9f5910409fd.png)
