@@ -91,3 +91,27 @@
   - AWS Transit Gateway inter-Region peering encrypts all traffic, with no single point of failure or bandwidth bottleneck.
   - Data is automatically encrypted, and never travels over the public internet.
     ![plot](img/tgw-after.d85d3e2cb67fd2ed1a3be645d443e9f5910409fd.png)
+- Gateway endpoints
+  - A gateway endpoint is a gateway that is a target for a route in your route table used for traffic destined to either Amazon S3 or DynamoDB. 
+  - Amazon S3 supports both gateway endpoints and interface endpoints.
+  - There is no charge for using gateway endpoints.
+  - Gateway endpoints use public IP addresses to route.
+  - Gateway endpoints does not allow access from on premises and another AWS Region   
+- Interface endpoints
+  - An interface VPC endpoint (interface endpoint) allows you to connect to services powered by AWS PrivateLink
+  - It uses private IP addresses from your VPC to access some AWS services like Amazon S3
+  - Interface endpoints Allow access from on premises
+  - Interface endpoints Allow access from a VPC in another AWS Region using VPC peering or AWS Transit Gateway
+  - Interface endpoints are charged per hour and per petabyte
+- AWS private link
+- Gateway load balancer
+  - Gateway Load Balancer makes it easy to deploy, scale, and manage your third-party virtual appliances.
+  - It gives you one gateway for distributing traffic across multiple virtual appliances, while linearly scaling based on demand. 
+  - This eliminates potential points of failure in your network and increases availability.
+  - Gateway Load Balancer are a new type of VPC endpoint, Powered by PrivateLink technology, it connects Internet Gateways, VPCs, and other network resources over a private connection. Your traffic flows over the AWS network, and data is never exposed to the internet. 
+    ![plot](img/AWS-gateway-endpoint.png)
+- Client to site VPN
+- VPC traffic mirroring
+- AWS direct connect
+- AWS Outposts
+- AWS global acclerator
