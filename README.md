@@ -88,7 +88,7 @@
   - AWS Transit Gateway connects VPCs,This simplifies your network and puts an end to complex peering relationships. 
   - It can also extend to connect VPCs and on-premises networks through a central hub. 
   - It acts as a cloud router – each new connection is only made once.
-  - AWS Transit Gateway inter-Region peering encrypts all traffic, with no single point of failure or bandwidth bottleneck.
+  - AWS Transit Gateway inter-Region peering (no peering within same region) encrypts all traffic, with no single point of failure or bandwidth bottleneck.
   - Data is automatically encrypted, and never travels over the public internet.
     ![plot](img/tgw-after.d85d3e2cb67fd2ed1a3be645d443e9f5910409fd.png)
 - Gateway endpoints
@@ -118,6 +118,15 @@
 - AWS direct connect
   - AWS Direct Connect links on-prem network directly to AWS, bypassing the internet to deliver more consistent, lower-latency performance.
   - When creating a new connection, you can choose a hosted connection provided by an AWS Direct Connect Delivery Partner, or choose a dedicated connection from AWS—and deploy at over 100 AWS Direct Connect locations around the world.
+  - Cross conect is the physical cable. Its good to build 2 for resiliency
     ![plot](img/AWS-direct-connect.png)
 - AWS Outposts
+  - AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter or on-premises facility for a truly consistent hybrid experience.
+  - AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
+  - AWS compute, storage, database, and other services run locally on Outposts, and you can access the full range of AWS services available in the Region to build, manage, and scale your on-premises applications using familiar AWS services and tools.
+  - You can purchase a variety of AWS Outposts configurations featuring a combination of EC2 instance types, EBS gp2 volume, and S3 on Outposts. 
+  - Pricing include delivery, installation, infrastructure service maintenance and software patches and upgrades.
+  - You can also increase your EC2, EBS, and S3 storage capacity over time by upgrading your configuration.
+  - You can purchase Outposts capacity for a 3-year term
+    ![plot](img/AWS-outposts.png )
 - AWS global acclerator
