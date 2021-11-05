@@ -24,4 +24,5 @@
     - **Resource** The amazon resource(s) that will act upon - "Resource": "arn:aws:s3:::DOC-EXAMPLE-BUCKET/*"
     - **Condition** The condition under action defined is valid - "Condition" : { "{condition-operator}" : { "{condition-key}" : "{condition-value}" }} e.g { "StringEquals" : { "aws:username" : "johndoe" }}
    ![plot](img/aws-iam-policy-evaluation.png)
+   ![plot](img/AWS-IAM-policy-types.png)
  
