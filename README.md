@@ -19,6 +19,26 @@
     - **Edge association—** A route table that you use to route inbound VPC traffic to an appliance. You associate a route table with the internet gateway or virtual private gateway, and specify the network interface of your appliance as the target for VPC traffic.
     - **Transit gateway route table—** A route table that's associated with a transit gateway. For more information, see Transit gateway route tables in Amazon VPC Transit Gateways.
     - **Local gateway route table—** A route table that's associated with an Outposts local gateway. For more information, see Local gateways in the AWS Outposts User Guide.
+    - Example of route table on public subnet
+      Destination           | Target               | Comments
+      ------------          | -------------        | ----------------
+      10.0.0.0/16           | local                | Route across all subnets in the VPC
+      0.0.0.0/0             | internet-gateway-id  | Route to internet gateway
+      S3.prefix.list        | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
+      DynamoDB.prefix.list  | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
+      on-premises           | VPN-gateway-id       | To connect to on prem via VPN gateway
+      to-other-VPC          | other VPC-id         | if you are peering VPC's in a point-to-point fashion
+      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region, VPN, AWS services via private link
+    - Example of route tablle of private subnet
+      Destination           | Target               | Comments
+      ------------          | -------------        | ----------------
+      10.0.0.0/16           | local                | Route across all subnets in the VPC
+      0.0.0.0/0             | nat-gateway-id       | Route to NAT gateway on public subnet. This is required to for instances on private subnet to make outbound calls to internet
+      S3.prefix.list        | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
+      DynamoDB.prefix.list  | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
+      on-premises           | VPN-gateway-id       | To connect to on prem via VPN gateway
+      to-other-VPC          | other VPC-id         | if you are peering VPC's in a point-to-point fashion
+      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region, VPN, AWS services via private link
 - Subnets
   -  a segmented piece of a range of IP addresses in VPC
   -  To add a new subnet to your VPC, you must specify an IPv4 CIDR block for the subnet from the range of your VPC.
