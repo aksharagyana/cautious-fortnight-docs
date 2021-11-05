@@ -16,3 +16,12 @@
     Security group first layer of defense for outbound/egress traffic |  Network ACL is second layer of the defense for outbound/egress traffic.
     Instance can have multiple Security groups | Subnet must have only one NACL
    
+- IAM
+  - Each IAM user name is unique and case-insensitive. 
+  - IAM policy structure follows **PARC** model - **P**rinciple **A**ction **R**esource **C**ondition
+    - **Principle** The entity that is allowed or denied access - "Principal":"AWS":"arn:aws:iam::123456789012:user"
+    - **Action** Type of action allowed or denyed - "Action":"s3:GetObject"
+    - **Resource** The amazon resource(s) that will act upon - "Resource": "arn:aws:s3:::DOC-EXAMPLE-BUCKET/*"
+    - **Condition** The condition under action defined is valid - "Condition" : { "{condition-operator}" : { "{condition-key}" : "{condition-value}" }} e.g { "StringEquals" : { "aws:username" : "johndoe" }}
+   ![plot](img/aws-iam-policy-evaluation.png)
+ 
