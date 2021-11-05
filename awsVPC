@@ -1,4 +1,4 @@
-<mxfile modified="2021-11-05T13:40:49.825Z" host="app.diagrams.net" agent="5.0 (Macintosh)" etag="XE6nYQfmQCSS8h2L-tEU" version="15.6.8" type="github">
+<mxfile modified="2021-11-05T13:41:09.890Z" host="app.diagrams.net" agent="5.0 (Macintosh)" etag="diYeIP3LYFt2ynT6RHs7" version="15.6.8" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="1426" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -277,9 +277,6 @@
         </mxCell>
         <mxCell id="4cMzkC4c3HAkXsG-X76k-5" value="AWS privatelink service provider" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="329" width="140" height="31" as="geometry" />
-        </mxCell>
-        <mxCell id="4cMzkC4c3HAkXsG-X76k-7" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instances;" vertex="1" parent="1">
-          <mxGeometry x="560" y="360" width="48" height="48" as="geometry" />
         </mxCell>
         <mxCell id="4cMzkC4c3HAkXsG-X76k-8" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instances;" vertex="1" parent="1">
           <mxGeometry x="58.75" y="284.5" width="37.75" height="37.75" as="geometry" />
