@@ -110,6 +110,9 @@
   - This eliminates potential points of failure in your network and increases availability.
   - Gateway Load Balancer are a new type of VPC endpoint, Powered by PrivateLink technology, it connects Internet Gateways, VPCs, and other network resources over a private connection. Your traffic flows over the AWS network, and data is never exposed to the internet. 
     ![plot](img/AWS-gateway-endpoint.png)
+- AWS Network Firewall
+  - AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs).
+    ![plot](img/AWS-Network-Firewall.png)
 - Client to site VPN
 - VPC traffic mirroring
 - AWS direct connect
