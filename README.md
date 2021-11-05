@@ -112,12 +112,12 @@
     ![plot](img/AWS-gateway-endpoint.png)
 - AWS Network Firewall
   - AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs).
-    ![plot](img/AWS-direct-connect.png)
+    ![plot](img/AWS-Network-Firewall.png)
 - Client to site VPN
 - VPC traffic mirroring
 - AWS direct connect
   - AWS Direct Connect links on-prem network directly to AWS, bypassing the internet to deliver more consistent, lower-latency performance.
   - When creating a new connection, you can choose a hosted connection provided by an AWS Direct Connect Delivery Partner, or choose a dedicated connection from AWS—and deploy at over 100 AWS Direct Connect locations around the world.
-    ![plot](img/AWS-Network-Firewall.png)
+    ![plot](img/AWS-direct-connect.png)
 - AWS Outposts
 - AWS global acclerator
