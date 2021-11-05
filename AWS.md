@@ -25,4 +25,9 @@
     - **Condition** The condition under action defined is valid - "Condition" : { "{condition-operator}" : { "{condition-key}" : "{condition-value}" }} e.g { "StringEquals" : { "aws:username" : "johndoe" }}
    ![plot](img/aws-iam-policy-evaluation.png)
    ![plot](img/AWS-IAM-policy-types.png)
+   ![plot](img/how-IAM-policies-work.png)
+    - Service controlled policies (SCPs) : are used to set permissions for guardrails across acoounts
+    - Permission boundaries : enable developers to create roles safely
+    - IAM permission policy : Control creation of resources to regions, Uses tags to scale permission management
+ 
  
