@@ -14,5 +14,5 @@
     All rules in a security group are applied | Rules are applied in their order (the rule with the lower number gets processed first) in Network ACL.
     Security group is second layer of the defense for inbound/ingress traffic |  Network ACL first layer of defense for inbound/ingress traffic.
     Security group first layer of defense for outbound/egress traffic |  Network ACL is second layer of the defense for outbound/egress traffic.
-    Subnet must have only one NACL | Instance can have multiple Security groups.
+    Instance can have multiple Security groups | Subnet must have only one NACL
    
