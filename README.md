@@ -28,7 +28,7 @@
       DynamoDB.prefix.list  | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
       on-premises           | VPN-gateway-id       | To connect to on prem via VPN gateway
       to-other-VPC          | other VPC-id         | if you are peering VPC's in a point-to-point fashion
-      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region, VPN
+      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region (Including interface endpoints), VPN. 
     - Example of route tablle of private subnet
       Destination           | Target               | Comments
       ------------          | -------------        | ----------------
@@ -38,7 +38,7 @@
       DynamoDB.prefix.list  | gateway-endpoint-id  | if you are using gateway endpoint, gateway endpoint can route only to S3 and dynamo DB via public ip. This route can be on public/private subnet
       on-premises           | VPN-gateway-id       | To connect to on prem via VPN gateway
       to-other-VPC          | other VPC-id         | if you are peering VPC's in a point-to-point fashion
-      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region, VPN
+      other-routes-via-TGW  | transit-gateway-id   | Transit gateway to connect upt 5000 VPCs in a region, other transit gateways in X region (Including interface endpoints), VPN
 - Subnets
   -  a segmented piece of a range of IP addresses in VPC
   -  To add a new subnet to your VPC, you must specify an IPv4 CIDR block for the subnet from the range of your VPC.
